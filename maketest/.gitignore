@@ -3,7 +3,6 @@ build/Drivers/CMSIS/ARM.CMSIS.pdsc
 *.o
 *.su
 *.a
-/build
 /DSP
 /NN
 /RTOS

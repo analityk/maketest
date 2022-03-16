@@ -1,0 +1,3 @@
+../Core/Src/eth.c:30:6:MX_ETH_Init	8	static
+../Core/Src/eth.c:72:6:HAL_ETH_MspInit	72	static
+../Core/Src/eth.c:134:6:HAL_ETH_MspDeInit	8	static
