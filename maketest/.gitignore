@@ -1,0 +1,15 @@
+build/Drivers/CMSIS/ARM.CMSIS.pdsc
+*.d
+*.o
+*.su
+*.a
+/build
+/DSP
+/NN
+/RTOS
+/RTOS2
+*.srec
+*.map
+*.hex
+*.md
+*.txt
