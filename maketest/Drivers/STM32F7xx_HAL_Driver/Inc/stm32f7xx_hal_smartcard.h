@@ -1054,7 +1054,7 @@ typedef enum
   */
 
 /* Include SMARTCARD HAL Extended module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_smartcard_ex.h"
+#include "stm32f7xx_hal_smartcard_ex.h"
 
 /* Exported functions --------------------------------------------------------*/
 /** @addtogroup SMARTCARD_Exported_Functions

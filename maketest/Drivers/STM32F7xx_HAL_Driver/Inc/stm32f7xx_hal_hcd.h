@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_usb.h"
+#include "stm32f7xx_ll_usb.h"
 
 #if defined (USB_OTG_FS) || defined (USB_OTG_HS)
 /** @addtogroup STM32F7xx_HAL_Driver

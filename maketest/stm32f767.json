@@ -1,0 +1,23 @@
+{
+  "debug": {
+    "openocd_target": "stm32f7x",
+    "tools": {
+      "stlink": {
+        "default": true,
+        "server": {
+          "arguments": [
+            "-f",
+            "C:/dev/tools/OpenOCD-20211118-0.11.0/share/openocd/scripts/interface/stlink.cfg",
+            "-f",
+            "C:/dev/tools/OpenOCD-20211118-0.11.0/share/openocd/scripts/target/stm32f7x.cfg",
+			      "-c",
+			      "\"program maketest.elf verify reset exit\""
+          ],
+          "executable": "C:/dev/tools/OpenOCD-20211118-0.11.0/bin/openocd.exe",
+          "package": ""
+        },
+        "onboard": true
+      }
+    }
+  }
+}

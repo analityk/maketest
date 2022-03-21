@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dsi.h"
+#include "stm32f7xx_hal_dsi.h"
 
 /** @addtogroup STM32F7xx_HAL_Driver
   * @{
@@ -283,7 +283,7 @@ typedef struct
   */
 
 /* Include PWR HAL Extension module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pwr_ex.h"
+#include "stm32f7xx_hal_pwr_ex.h"
 
 /* Exported functions --------------------------------------------------------*/
 /** @addtogroup PWR_Exported_Functions PWR Exported Functions

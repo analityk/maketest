@@ -774,7 +774,7 @@ typedef  void (*pUSART_CallbackTypeDef)(USART_HandleTypeDef *husart);  /*!< poin
   */
 
 /* Include USART HAL Extended module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_usart_ex.h"
+#include "stm32f7xx_hal_usart_ex.h"
 
 /* Exported functions --------------------------------------------------------*/
 /** @addtogroup USART_Exported_Functions USART Exported Functions

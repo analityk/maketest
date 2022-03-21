@@ -27,7 +27,7 @@ extern "C" {
 
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h"
+#include "stm32f7xx_hal_def.h"
 
 /** @addtogroup STM32F7xx_HAL_Driver
   * @{
@@ -495,7 +495,7 @@ typedef  void (*pCRYP_CallbackTypeDef)(CRYP_HandleTypeDef *hcryp);    /*!< point
   * @}
   */
 /* Include CRYP HAL Extended module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_cryp_ex.h"
+#include "stm32f7xx_hal_cryp_ex.h"
 /* Exported functions --------------------------------------------------------*/
 /** @defgroup CRYP_Exported_Functions CRYP Exported Functions
   * @{

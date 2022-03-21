@@ -27,9 +27,8 @@
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\CMSIS\Device\ST\STM32F7xx\Include\stm32f767xx.h"
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\Legacy\stm32_hal_legacy.h"
-//#include "C:\dev\tools\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stddef.h"
+#include "stm32f767xx.h"
+#include "stm32_hal_legacy.h"
 #include <stddef.h>
 
 typedef enum 

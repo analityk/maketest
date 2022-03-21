@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h"
+#include "stm32f7xx_hal_def.h"
 
 typedef struct
 {
@@ -195,7 +195,7 @@ typedef enum
   */
 
 /* Include GPIO HAL Extension module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_gpio_ex.h"
+#include "stm32f7xx_hal_gpio_ex.h"
 
 /* Exported functions --------------------------------------------------------*/
 /** @addtogroup GPIO_Exported_Functions

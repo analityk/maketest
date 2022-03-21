@@ -1,0 +1,62 @@
+{
+    "configurations": [
+       {
+            "name": "STM32MAKE",
+            "includePath": [
+                "C:/dev/Projects/maketest/maketest/Core",
+                "C:/dev/Projects/maketest/maketest/Core/Src",
+                "C:/dev/Projects/maketest/maketest/Core/Inc",
+                "C:/dev/Projects/maketest/maketest/Core/CppSrc",
+                "C:/dev/Projects/maketest/maketest/Drivers",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS/Core",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS/Core/Include",
+                "C:/dev/Projects/maketest/maketest/Drivers/STM32F7xx_HAL_Driver",
+                "C:/dev/Projects/maketest/maketest/Drivers/STM32F7xx_HAL_Driver/Inc",
+                "C:/dev/Projects/maketest/maketest/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS/Device",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS/Device/ST",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS/Device/ST/STM32F7xx",
+                "C:/dev/Projects/maketest/maketest/Drivers/CMSIS/Device/ST/STM32F7xx/Include",
+                "C:/dev/tools/gcc-arm-none-eabi-10.3-2021.10/**"
+            ],
+            "defines": [
+                "-DDEBUG",
+                "-DUSE_HAL_DRIVER",
+                "-DSTM32F767xx",
+                "-D__cplusplus"
+            ],
+            "windowsSdkVersion": "10.0.17763.0",
+            "compilerPath": "C:/dev/tools/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-arm",
+            "compilerArgs": [
+                "-mcpu=cortex-m7",
+                "-std=gnu11",
+                "-g3",
+                "-DDEBUG",
+                "-DUSE_HAL_DRIVER",
+                "-DSTM32F767xx",
+                "-c",
+                "-Os",
+                "-ffunction-sections",
+                "-fdata-sections",
+                "-fno-strict-aliasing",
+                "-Wall",
+                "-Wconversion",
+                "-fstack-usage",
+                "-MMD",
+                "-MP",
+                "-MF\"$(@:%.o=%.d)\"",
+                "-MT\"$@\"",
+                "--specs=nano.specs",
+                "-mfpu=fpv5-d16",
+                "-mfloat-abi=soft",
+                "-mthumb",
+                "-o"
+            ]
+        }
+    ],
+    "version": 4
+}

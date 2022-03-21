@@ -62,7 +62,7 @@ main-build: maketest.elf #secondary-outputs
 
 # Tool invocations
 maketest.elf: $(OBJS) $(USER_OBJS) ../Core/Linker/STM32F767ZITX_FLASH.ld makefile objects.list $(OPTIONAL_TOOL_DEPS)
-	arm-none-eabi-gcc -o "maketest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:/dev/Projects/maketest/maketest/Core/Linker/STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="maketest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
+	arm-none-eabi-g++ -o "maketest.elf" @"objects.list" $(USER_OBJS) $(LIBS) -mcpu=cortex-m7 -T"C:/dev/Projects/maketest/maketest/Core/Linker/STM32F767ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="maketest.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=soft -mthumb -u _printf_float -u _scanf_float -Wl,--start-group -lc -lm -Wl,--end-group
 	@echo 'Finished building target: $@'
 	@echo ' '
 

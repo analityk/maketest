@@ -161,10 +161,9 @@ typedef enum
 #define __ICACHE_PRESENT          1       /*!< CM7 instruction cache present                 */
 #define __DCACHE_PRESENT          1       /*!< CM7 data cache present                        */
 
-#include "C:\dev\Projects\maketest\maketest\Drivers\CMSIS\Core\Include\core_cm7.h"                   /*!< Cortex-M7 processor and core peripherals      */
-#include "C:\dev\Projects\maketest\maketest\Drivers\CMSIS\Device\ST\STM32F7xx\Include\system_stm32f7xx.h"
+#include "core_cm7.h"                   /*!< Cortex-M7 processor and core peripherals      */
+#include "system_stm32f7xx.h"
 #include <stdint.h>
-//#include "C:\dev\tools\gcc-arm-none-eabi-10.3-2021.10\lib\gcc\arm-none-eabi\10.3.1\include\stdint-gcc.h"
 
 /** @addtogroup Peripheral_registers_structures
   * @{

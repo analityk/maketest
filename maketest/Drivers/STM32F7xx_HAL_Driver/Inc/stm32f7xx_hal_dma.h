@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h"
+#include "stm32f7xx_hal_def.h"
 
 typedef struct
 {
@@ -348,7 +348,7 @@ typedef struct __DMA_HandleTypeDef
 
 
 /* Include DMA HAL Extension module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_dma_ex.h"   
+#include "stm32f7xx_hal_dma_ex.h"   
 
 
 HAL_StatusTypeDef HAL_DMA_Init(DMA_HandleTypeDef *hdma); 

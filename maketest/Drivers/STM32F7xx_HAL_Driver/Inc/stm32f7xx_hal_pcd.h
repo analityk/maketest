@@ -26,7 +26,7 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_ll_usb.h"
+#include "stm32f7xx_ll_usb.h"
 
 #if defined (USB_OTG_FS) || defined (USB_OTG_HS)
 
@@ -138,7 +138,7 @@ typedef struct
   */
 
 /* Include PCD HAL Extended module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_pcd_ex.h"
+#include "stm32f7xx_hal_pcd_ex.h"
 
 /* Exported constants --------------------------------------------------------*/
 /** @defgroup PCD_Exported_Constants PCD Exported Constants

@@ -26,11 +26,11 @@ extern "C" {
 #endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_def.h"
+#include "stm32f7xx_hal_def.h"
    
 /* Include RCC HAL Extended module */
 /* (include on top of file since RCC structures are defined in extended file) */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h"   
+#include "stm32f7xx_hal_rcc_ex.h"   
 
 typedef struct
 {
@@ -1106,7 +1106,7 @@ typedef struct
   */
 
 /* Include RCC HAL Extension module */
-#include "C:\dev\Projects\maketest\maketest\Drivers\STM32F7xx_HAL_Driver\Inc\stm32f7xx_hal_rcc_ex.h"
+#include "stm32f7xx_hal_rcc_ex.h"
 
 /* Exported functions --------------------------------------------------------*/
  /** @addtogroup RCC_Exported_Functions
