@@ -1,22 +1,3 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "eth.h"
 #include "usart.h"
@@ -24,10 +5,9 @@
 #include "gpio.h"
 #include "tim.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 
-/* dodanie nowego pliku c wiaze sie z koniecznościa edycji make, na przykładznie tim.c
+/* 
+  dodanie nowego pliku c wiaze sie z koniecznościa edycji make, na przykładznie tim.c
   w pliku:
     objects.list
   dodać 
@@ -43,46 +23,13 @@
       ./Core/Src/tim.d \
     oraz w clean'erze:
       ./Core/Src/tim.d ./Core/Src/tim.o
-  */
- 
+*/
 
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
-
-/* USER CODE BEGIN PV */
-
-/* USER CODE END PV */
-
-/* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-/* USER CODE BEGIN PFP */
 
-/* USER CODE END PFP */
-
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+ #define SRC (1<<9)
+ #define PROSTE_MAKRO SRC
+ 
 int main(void)
 {
  
@@ -90,7 +37,9 @@ int main(void)
 
   SystemClock_Config();
 
-
+  if(PROSTE_MAKRO){
+    
+  };
   MX_GPIO_Init();
   MX_ETH_Init();
   MX_USART3_UART_Init();
@@ -106,7 +55,7 @@ int main(void)
   while(1){
     
     htim1_cnt = __HAL_TIM_GET_COUNTER(&htim1);
-    if(htim1_cnt >= 500){
+    if(htim1_cnt > 500){
       htim1_cnt = 0;
       HAL_GPIO_TogglePin(GPIOB, GPIO_PIN_7);
     };
